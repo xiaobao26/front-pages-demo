@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>registration form</title>
+  </head>
+  <body>
+    <div class="container">
+      
+      <div class="content">
+        <form action="#">
+          <div class="title">Registration</div>
+
+          <div class="user-details">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" required style="width: 100%;"><br><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" required style="width: 100%;"><br><br>
+            <label for="email">Enter your email:</label><br>
+            <input type="email" id="email" name="email" required style="width: 100%;"><br><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd" minlength="8" style="width: 100%;" required><br><br>
+            <label for="pwd">Confirm your Password:</label><br>
+            <input type="password" id="pwd" name="pwd" minlength="8" style="width: 100%;" required><br><br>
+            <label for="birthday">Date of birth:</label><br>
+            <input type="date" id="birthday" name="birthday" style="width: 100%;" required>
+          </div>
+          <br>
+
+
+          <div class="gender-details">
+            <div class="title">Gender</div>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">male</label><br>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">female</label><br>
+            <input type="radio" id="prefer_not_to_say" name="gender" value="prefer_not_to_say" required>
+            <label for="prefer_not_to_say">prefer not to say</label><br>
+          </div>
+
+          <br>
+
+          <div class="introduce-details">
+            <div class="title">About me</div>
+          <textarea id="about_me" name="about_me" rows="4" cols="50" required></textarea>
+          </div>
+          <br>
+
+
+          <div class="profession-details">
+            <div class="title">choose your profession</div>
+            <select name="profession" id="profession" class="pr">
+              <option value="Web Development" >Web Development</option>
+              <option value="Data Analytics" >Data Analytics</option>
+              <option value="UI/UX Design" >UI/UX Design</option>
+            </select>
+          </div>
+
+        <br>
+            
+          <div class="button">
+            <input type="submit" class="submit" value="Register">
+          </div>
+    
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
